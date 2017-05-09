@@ -67,10 +67,10 @@
 (require 'helm-config)
 
 ;;evil-mode key bindings
-(global-set-key (kbd "C-h") 'evil-window-left)
-(global-set-key (kbd "C-j") 'evil-window-down)
-(global-set-key (kbd "C-k") 'evil-window-up)
-(global-set-key (kbd "C-l") 'evil-window-right)
+(global-set-key (kbd "M-h") 'evil-window-left)
+(global-set-key (kbd "M-j") 'evil-window-down)
+(global-set-key (kbd "M-k") 'evil-window-up)
+(global-set-key (kbd "M-l") 'evil-window-right)
 
 (global-set-key (kbd "M-x") 'helm-M-x)
 
