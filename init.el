@@ -17,6 +17,7 @@
  )
 
 (setq inhibit-startup-message t)
+(tool-bar-mode -1)
 (global-linum-mode 1)
 (global-hl-line-mode 1)				;highlight current line
 (require 'package)
