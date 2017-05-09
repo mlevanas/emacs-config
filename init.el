@@ -16,6 +16,18 @@
  ;; If there is more than one, they won't work right.
  )
 
+
+;;
+;;pakeitimai
+;;
+(setq backup-directory-alist '(("." . "~/.emacs.d/backup"))
+      backup-by-copying t
+      version-control t
+      delete-old-versions t
+      kept-new-versions 20
+      kept-old-versions 5
+)
+
 (setq inhibit-startup-message t)
 (tool-bar-mode -1)
 (global-linum-mode 1)
