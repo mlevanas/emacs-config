@@ -1,0 +1,9 @@
+#*#
+/#test.php#
+/ac-comphist.dat
+auto-save-list/*
+backup/*
+elpa/*
+evil/*
+*~
+server/*
