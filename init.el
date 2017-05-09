@@ -8,7 +8,9 @@
  '(ansi-color-names-vector
    ["black" "#d55e00" "#009e73" "#f8ec59" "#0072b2" "#cc79a7" "#56b4e9" "white"])
  '(custom-enabled-themes (quote (deeper-blue)))
- '(package-selected-packages (quote (web-mode-edit-element web-mode php-mode))))
+ '(package-selected-packages
+   (quote
+    (smart-mode-line-powerline-theme powerline-evil airline-themes powerline web-mode-edit-element web-mode php-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -49,11 +51,17 @@
   :ensure t)
 (use-package helm
   :ensure t)
-(use-package smart-mode-line
-  :ensure t)
 (use-package evil-leader
   :ensure t)
 (use-package magit
+  :ensure t)
+(use-package powerline
+  :ensure t)
+(use-package airline-themes
+  :ensure t)
+(use-package powerline-evil
+  :ensure t)
+(use-package smart-mode-line-powerline-theme
   :ensure t)
 ;;helm configuration
 (require 'helm-config)
@@ -80,6 +88,7 @@
 (require 'auto-complete-config)
 (ac-config-default)
 
-(require 'cl)
-(setq sml/no-confirm-load-theme t)
+(setq powerline-arrow-shape 'curve)
+(setq powerline-default-separator-dir '(right . left))
+(setq sml/theme 'powerline)
 (sml/setup)
